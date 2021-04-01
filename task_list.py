@@ -53,7 +53,7 @@ def print_task_with_x_time(list, time):
     found_task = []
 
     for task in tasks:
-        if task["time_taken"] <= time:
+        if task["time_taken"] >= time:
             found_task.append(task["description"])
     return found_task
 
@@ -62,7 +62,7 @@ print(print_task_with_x_time(tasks, 15))
 # Print any task with a given description 
 
 def print_task_with_x_description(list, description):
-    found_task = []
+    found_task = []#should not use a list!!!
 
     for task in tasks:
         if task["description"] == description:
@@ -102,5 +102,17 @@ print(tasks[5])
 
 # Further Extensions
 
-# Use a while loop to display the following menu and allow the use to enter an option.
+# Use a while loop to display the following menu and allow the user to enter an option.
 
+# print("Menu:")
+# print("1: Display All Tasks")
+# print("2: Display Uncompleted Tasks")
+# print("3: Display Completed Tasks")
+# print("4: Mark Task as Complete")
+# print("5: Get Tasks Which Take Longer Than a Given Time")
+# print("6: Find Task by Description")
+# print("7: Add a new Task to list")
+# print("M or m: Display this menu")
+# print("Q or q: Quit")
+
+# def daily_task_checklist()
